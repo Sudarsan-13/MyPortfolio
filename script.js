@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right', reset: true, distance: '80px', duration: 1500, delay: 100 });
 
     const typed = new Typed('.multiple-text', {
-        strings: ['Flutter Developer', 'UI/UX Designer', 'Content Writer', 'Crickter'],
+        strings: ['Web Developer', 'UI/UX Designer', 'Content Writer', 'Crickter'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,

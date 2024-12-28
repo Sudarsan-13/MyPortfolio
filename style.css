@@ -536,8 +536,21 @@ span{
 
 @media (max-width: 879px){
     .portfolio .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:1fr;
     }
+}
+
+/* Remove number input spinner for Bootstrap form-control */
+.form-control[type="number"].no-spinner {
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: none;  /* Chrome, Safari, Edge */
+  appearance: none;          /* Modern browsers */
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 @media (max-width: 768px) {
@@ -555,7 +568,7 @@ span{
     }
 
     .portfolio .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
 
 
@@ -623,7 +636,7 @@ span{
     }
 
     .portfolio .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
 
 }

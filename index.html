@@ -21,7 +21,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Service</a>
+        <a href="#services">Interests</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -73,18 +73,18 @@ https://www.instagram.com/itzx_lucifer_
             ></a>
           </div>
         </div>
-        <a href="#" class="btn">Download cv</a>
+        <a href="https://drive.google.com/file/d/1Ja0d6ktVTC_lCw1tO1efRsBme0Xrlkuu/view?usp=sharing" target="_blank" class="btn">Download cv</a>
       </div>
 
       <div class="home-img">
-        <img src="moon1k.png" alt="" />
+        <img src="ghibili.png" alt="" />
       </div>
     </section>
 
     <!--about section design-->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="ab.png" alt="" />
+        <img src="portimage.png" alt="" />
       </div>
       <div class="about-content">
         <h2 class="heading">About<span>Me</span></h2>
@@ -106,7 +106,7 @@ https://www.instagram.com/itzx_lucifer_
 
     <!--service design-->
     <section class="services" id="services">
-      <h2 class="heading">My <span>Services</span></h2>
+      <h2 class="heading">My <span>Interests</span></h2>
 
       <div class="services-container">
         <div class="services-box">
@@ -184,16 +184,28 @@ https://www.instagram.com/itzx_lucifer_
     <!--contact me section design-->
     <section class="contact" id="contact">
       <h2 class="heading">Contact<span> Me!</span></h2>
-      <form action="#">
+      <form id="contact-form" action="https://formsubmit.co/sudarsan1307@gmail.com" method="POST">
         <div class="input-box">
-          <input type="text" class="form-control" placeholder="Full Name" />
-          <input type="email" class="form-control" placeholder="Enter your email address" />
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required />
+          <input type="email" name="email" class="form-control" placeholder="Enter your email address" required />
         </div>
         <div class="input-box">
-          <input type="tel" class="form-control" placeholder="Enter your mobile number" />
-          <input type="text" class="form-control" placeholder="Email Subject" />
+          <input type="tel" name="phone" class="form-control" placeholder="Enter your mobile number" />
+          <input type="text" name="subject" class="form-control" placeholder="Email Subject" required />
         </div>
-        <textarea class="form-control" name="" id="" cols="10" rows="10" placeholder="Your Message"></textarea>
+        <textarea class="form-control" name="message" cols="10" rows="10" placeholder="Your Message" required></textarea>
+        
+        <!-- These hidden fields customize the behavior -->
+        <input type="hidden" name="_subject" value="New Portfolio Contact Request">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        
+        <!-- Use ajax mode to prevent page reload -->
+        <input type="hidden" name="_next" value="https://sudarsan.vercel.app">
+        
+        <!-- Add honeypot protection -->
+        <input type="text" name="_honey" style="display:none">
+        
         <input type="submit" value="Send Message" class="btn btn-primary" />
       </form>
     </section>
